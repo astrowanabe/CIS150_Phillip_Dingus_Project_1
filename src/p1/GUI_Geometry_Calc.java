@@ -1,5 +1,10 @@
 /**
- * Created by pdingus on 10/29/2015.
+ * GUI_Geometry_Calc.java
+ *
+ * Phillip Dingus
+ * 11-3-15
+ * CIS150-401
+ * E. Mailman
  */
 
 package p1;
@@ -20,12 +25,12 @@ import javafx.stage.Stage;
 public class GUI_Geometry_Calc extends Application {
     public void start(Stage primaryStage) {
         //These must be visible to the inner class
-        TextField tfLength = new TextField();
-        TextField tfHeight = new TextField();
-        Label lbArea = new Label();
-        Label lbPerimeter = new Label();
+        TextField tfLength = new TextField();   //Will hold length of rectangle
+        TextField tfHeight = new TextField();   //Will hold height of rectangle
+        Label lbArea = new Label();             //Label for displaying rectangle's area
+        Label lbPerimeter = new Label();        //Label for displaying rectangle's perimeter
 
-
+        // Create grid pane and set insets
         GridPane pane = new GridPane();
         pane.setAlignment(Pos.CENTER);
         pane.setPadding(new Insets(10, 10, 10, 10));
